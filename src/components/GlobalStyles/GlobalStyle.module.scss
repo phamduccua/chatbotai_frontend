@@ -1,0 +1,32 @@
+@import 'normalize.css';
+:root {
+    
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 20px;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+}
+label{
+    font-size: 18px;
+}
+button,
+input,
+[tabindex] {
+    border: none;
+    outline: none;
+}
+a[href] {
+    text-decoration: none;
+}
+
+input[type="password"]::-ms-reveal,
+input[type="password"]::-webkit-credentials-auto-fill-button {
+  display: none; 
+}
