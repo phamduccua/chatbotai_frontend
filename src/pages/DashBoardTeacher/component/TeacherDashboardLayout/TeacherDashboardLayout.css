@@ -1,1 +1,38 @@
+.teacher-dashboard-layout {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Cột nội dung chính (2 phần) và cột sidebar (1 phần) */
+  grid-template-rows: auto auto auto auto; /* Các hàng cho Header, Stats, Courses/Assignments, Calendar/Tools */
+  gap: 20px;
+  grid-template-areas:
+    "header header"
+    "stats sidebar"
+    "courses sidebar"
+    "assignments sidebar"
+    "footer footer"; /* Có thể thêm footer nếu cần */
+}
 
+/* Định nghĩa các area cho các section */
+.teacher-dashboard-layout .dashboard-header-area { grid-area: header; }
+.teacher-dashboard-layout .stats-area { grid-area: stats; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; } /* Stats nội bộ dùng grid */
+.teacher-dashboard-layout .courses-area { grid-area: courses; }
+.teacher-dashboard-layout .assignments-area { grid-area: assignments; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; } /* Assignments nội bộ dùng grid */
+.teacher-dashboard-layout .sidebar-area { grid-area: sidebar; display: flex; flex-direction: column; gap: 20px;} /* Sidebar chứa các section khác */
+.teacher-dashboard-layout .footer-area { grid-area: footer; }
+
+/* Responsive - điều chỉnh layout trên màn hình nhỏ hơn */
+@media (max-width: 768px) {
+    .teacher-dashboard-layout {
+        grid-template-columns: 1fr; /* 1 cột trên màn hình nhỏ */
+        grid-template-areas:
+           "header"
+           "stats"
+           "courses"
+           "assignments"
+           "sidebar"
+           "footer";
+    }
+    .teacher-dashboard-layout .stats-area { display: flex; flex-wrap: wrap; justify-content: space-around; }
+    .teacher-dashboard-layout .assignments-area { display: flex; flex-wrap: wrap; justify-content: space-around; }
+    .teacher-dashboard-layout .sidebar-area { flex-direction: column; }
+}
