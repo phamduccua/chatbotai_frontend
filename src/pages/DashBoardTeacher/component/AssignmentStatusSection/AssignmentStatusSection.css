@@ -1,1 +1,15 @@
-
+.assignment-status-section h2 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 15px;
+ }
+ 
+ .assignment-cards {
+   /* Bố cục nội bộ cho các thẻ bài tập bên trong */
+  display: flex; /* Sử dụng Flexbox */
+  flex-wrap: wrap; /* Cho phép các thẻ xuống dòng nếu không đủ chỗ */
+  gap: 20px; /* Khoảng cách giữa các thẻ */
+  /* Có thể thêm justify-content: space-around; hoặc center; tùy ý */
+  justify-content: flex-start; /* Các thẻ bắt đầu từ bên trái */
+ }
