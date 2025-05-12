@@ -1,0 +1,22 @@
+.recent-notifications-section .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+ 
+  .recent-notifications-section .section-header h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+  }
+ 
+  .recent-notifications-section .section-header a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+  }
+ 
+ .notifications-list {
+   /* NotificationItem đã có padding-bottom và border-bottom */
+ }
