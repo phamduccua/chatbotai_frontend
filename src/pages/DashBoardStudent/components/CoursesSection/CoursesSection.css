@@ -1,0 +1,23 @@
+.courses-section .section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.courses-section .section-header h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.courses-section .section-header a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 14px;
+}
+
+.courses-list {
+    border: 5px;
+  /* Các CourseItem sẽ tự dàn theo flexbox của CourseItem */
+}
