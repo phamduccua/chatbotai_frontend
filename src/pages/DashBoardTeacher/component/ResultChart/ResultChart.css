@@ -1,1 +1,16 @@
+.result-chart {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 20px;
 
+  /* Thêm style giống card */
+  background-color: #fff; /* Nền trắng */
+  border-radius: 8px; /* Bo góc */
+  padding: 15px; /* Padding bên trong */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08); /* Bóng đổ nhẹ */
+  border: 1px solid #eee; /* Viền mờ nhẹ */
+
+  /* Đảm bảo nội dung (biểu đồ) không bị tràn */
+  overflow: hidden;
+  position: relative; /* Cần thiết cho một số thư viện biểu đồ hoặc tooltip */
+}
