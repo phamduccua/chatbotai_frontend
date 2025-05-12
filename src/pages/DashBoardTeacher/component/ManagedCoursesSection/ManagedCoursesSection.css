@@ -1,1 +1,33 @@
+.managed-courses-section .section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
 
+ .managed-courses-section .section-header h2 {
+     margin: 0;
+     font-size: 18px;
+     color: #333;
+ }
+
+.add-course-button {
+  background-color: #6a5acd; /* Màu tím (Ví dụ, bạn có thể điều chỉnh màu chính xác) */
+  color: #fff; /* Chữ trắng */
+  border: none;
+  border-radius: 6px; /* Bo góc nhiều hơn một chút */
+  padding: 10px 20px; /* Tăng padding */
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.2s ease; /* Thêm hiệu ứng hover */
+}
+
+.add-course-button:hover {
+  background-color: #5a4bbf; /* Màu tím đậm hơn khi hover */
+}
+
+.courses-list {
+  /* ManagedCourseItem đã có styling nội bộ */
+}
