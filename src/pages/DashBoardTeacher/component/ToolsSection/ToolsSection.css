@@ -1,1 +1,12 @@
-
+.tools-section h2 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 15px;
+ }
+ 
+ .tool-buttons-list {
+   display: flex;
+   flex-direction: column; /* Các nút xếp dọc */
+   gap: 10px; /* Khoảng cách giữa các nút */
+ }
