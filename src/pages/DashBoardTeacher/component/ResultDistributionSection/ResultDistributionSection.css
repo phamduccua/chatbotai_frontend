@@ -1,1 +1,4 @@
-
+.result-distribution-section {
+    display: flex; /* Sử dụng flexbox để bố trí các phần tử bên trong */
+    /* Style cho container của section này nếu cần */
+ }
