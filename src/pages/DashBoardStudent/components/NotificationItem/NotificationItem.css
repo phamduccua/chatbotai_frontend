@@ -1,0 +1,45 @@
+.notification-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee; /* Đường kẻ phân cách */
+  }
+  
+   .notification-item:last-child {
+       border-bottom: none; /* Không có đường kẻ dưới item cuối cùng */
+       padding-bottom: 0;
+       margin-bottom: 0;
+   }
+  
+  .notification-icon {
+     width: 10px; /* Kích thước chấm/icon */
+     height: 10px;
+     border-radius: 50%; /* Hình tròn */
+     margin-right: 15px;
+     flex-shrink: 0; /* Không co lại */
+     margin-top: 4px; /* Căn chỉnh với text */
+  }
+  
+   .notification-type-new {
+       background-color: #007bff; /* Màu xanh cho thông báo mới */
+   }
+  
+   .notification-type-reminder {
+       background-color: #ffc107; /* Màu vàng cho nhắc nhở */
+   }
+  
+  .notification-content {
+    flex-grow: 1; /* Chiếm hết không gian còn lại */
+  }
+  
+  .notification-message {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 3px;
+  }
+  
+  .notification-time {
+    font-size: 12px;
+    color: #777;
+  }
