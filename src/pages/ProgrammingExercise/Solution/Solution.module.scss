@@ -1,0 +1,25 @@
+.container{
+    height: 90vh;
+    overflow: auto;
+    position: relative;
+}
+.label{
+    margin-top: 15px;
+    margin-left: 20px;
+    font-weight: 600;
+}
+.select{
+    position: absolute;
+    width: 120px;
+    height: 30px;
+    margin-top: 15px;
+    border-color: rgb(176, 176, 176) ;
+    border-radius: 5px;
+    right: 50px;
+}
+.code-editor{
+    margin-left: 20px;
+    margin-top: 15px;
+    width: 700px;
+    min-height: 300px;
+}

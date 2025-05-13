@@ -1,0 +1,22 @@
+# Sử dụng image node chính thức để xây dựng ứng dụng React
+FROM node:16 AS build
+
+# Tạo thư mục làm việc trong container
+WORKDIR /app
+
+# Copy package.json và install các dependencies
+COPY package.json package-lock.json /app/
+RUN npm install
+
+# Copy toàn bộ mã nguồn và build ứng dụng
+COPY . /app
+RUN npm run build
+
+# Sử dụng Nginx để serve ứng dụng React
+FROM nginx:alpine
+
+# Copy các file static build vào thư mục của Nginx
+COPY --from=build /app/build /usr/share/nginx/html
+
+# Expose port 80 cho ứng dụng frontend
+EXPOSE 80

@@ -1,0 +1,36 @@
+.container{
+    border-right: 1px rgb(176, 176, 176) solid;
+    height: 90vh;
+    overflow: auto;
+}
+
+span{
+    display: inline-block;
+}
+.label{
+    margin-top: 15px;
+    margin-left: 20px;
+    font-weight: 600;
+}
+.highlighted-text{
+    background-color: rgb(230, 230, 230);
+    border-radius: 5px;
+}
+.describe-article{
+    min-height: 130px;    
+    padding: 10px;
+    margin: 15px 20px 15px 20px;
+}
+.describe{
+    margin: 5px 20px 5px 20px;
+}
+.example-container{
+    display: flex;
+}
+.example-container > * {
+    margin: 5px 20px;
+    flex: 1;
+}
+.box-input, .box-output{
+    padding: 10px;
+}

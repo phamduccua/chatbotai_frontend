@@ -1,0 +1,21 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+}
+.exercise-header {
+    border-bottom: 1px rgb(176, 176, 176) solid;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    padding-left: 30px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.body{
+    display: flex;
+    flex: 1
+}
+.body > * {
+  flex: 1; 
+}
