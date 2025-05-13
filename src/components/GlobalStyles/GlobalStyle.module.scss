@@ -1,6 +1,8 @@
 @import 'normalize.css';
 :root {
-    
+    --primary: #5954D9;
+    --acepted: #28a745;
+    --warming: #dc3545;
 }
 * {
     margin: 0;
@@ -9,7 +11,7 @@
 }
 
 body {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
 }
@@ -18,6 +20,7 @@ label{
 }
 button,
 input,
+textarea:focus,
 [tabindex] {
     border: none;
     outline: none;
@@ -29,4 +32,8 @@ a[href] {
 input[type="password"]::-ms-reveal,
 input[type="password"]::-webkit-credentials-auto-fill-button {
   display: none; 
+}
+
+.cm-scroller{
+    height: 300px;
 }

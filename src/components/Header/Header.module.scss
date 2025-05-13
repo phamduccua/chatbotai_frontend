@@ -1,0 +1,29 @@
+.container{
+    height: 70px;
+    width: 100vw;
+    border-bottom: 1px rgb(176, 176, 176) solid;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    align-items: center;
+}
+.title{
+    font-weight: 700;
+    color: var(--primary);
+    font-size: 20px;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+.avatar{
+    background-color: var(--primary);
+    height: 45px;
+    width: 45px;
+    border-radius: 50px;
+
+    &:hover{
+        cursor: pointer;
+    }
+}

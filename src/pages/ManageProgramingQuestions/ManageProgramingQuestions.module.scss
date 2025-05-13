@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+    height: 90vh;
+}
+.slidebar{
+    border-right: 1px black solid;
+    flex: 2;
+}
+.content{
+    flex: 8;
+    position: relative;
+}

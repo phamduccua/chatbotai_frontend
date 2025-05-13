@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './components/Header/Header';
+import Header from '../../components/Header';
 import DashboardLayout from './components/DashboardLayout/DashboardLayout';
 import StatsSection from './components/StatsSection/StatsSection';
 import CoursesSection from './components/CoursesSection/CoursesSection';

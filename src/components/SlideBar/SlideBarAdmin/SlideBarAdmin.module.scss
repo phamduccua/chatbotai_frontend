@@ -1,0 +1,19 @@
+.options{
+    list-style-type: none;
+
+    li{
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        font-weight: 500;
+        cursor: pointer;
+
+        &:hover{
+            background-color: rgb(158, 158, 158);
+        }
+    }
+}
+.active{
+    background-color: var(--primary);
+    color: white;
+}

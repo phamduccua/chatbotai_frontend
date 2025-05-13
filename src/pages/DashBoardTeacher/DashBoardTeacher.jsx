@@ -1,16 +1,12 @@
 import React from 'react';
-import Header from './components/Header/Header';
-// Sửa dòng này
-import TeacherDashboardLayout from './components/TeacherDashboardLayout/TeacherDashboardLayout';
-import TeacherStatsSection from './components/TeacherStatsSection/TeacherStatsSection';
-import ManagedCoursesSection from './components/ManagedCoursesSection/ManagedCoursesSection';
-import AssignmentStatusSection from './components/AssignmentStatusSection/AssignmentStatusSection';
-// Sửa dòng này
-import ResultDistributionSection from './components/ResultDistributionSection/ResultDistributionSection';
-import ToolsSection from './components/ToolsSection/ToolsSection';
-
-// Import global CSS
-import './index.css'; // Đảm bảo đã import global styles
+import Header from '../../components/Header'
+import TeacherDashboardLayout from './component/TeacherDashboardLayout/TeacherDashboardLayout'
+import TeacherStatsSection from './component/TeacherStatsSection/TeacherStatsSection'
+import ManagedCoursesSection from './component/ManagedCoursesSection/ManagedCoursesSection'
+import AssignmentStatusSection from './component/AssignmentStatusSection/AssignmentStatusSection'
+import ResultDistributionSection from './component/ResultDistributionSection/ResultDistributionSection'
+import ToolsSection from './component/ToolsSection/ToolsSection'
+import './index.css';
 
 function DashBoardTeacher() {
   return (
