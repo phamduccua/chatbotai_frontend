@@ -1,0 +1,83 @@
+.assignment-status-section {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.assignments-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.assignment-status-card {
+  padding: 1rem;
+  border: 1px solid #eee;
+  border-radius: 8px;
+}
+
+.assignment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.assignment-header h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.status {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 12px;
+}
+
+.status.active {
+  background: #e6f7ed;
+  color: #00875a;
+}
+
+.status.pending {
+  background: #fff7e6;
+  color: #d46b08;
+}
+
+.course-name {
+  color: #666;
+  font-size: 0.875rem;
+  margin: 0 0 0.75rem;
+}
+
+.assignment-stats {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: #666;
+  font-size: 0.875rem;
+}
+
+.stat .material-symbols-outlined {
+  font-size: 1rem;
+}
+
+.progress-bar {
+  height: 4px;
+  background: #eee;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: #724ae8;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}

@@ -1,0 +1,37 @@
+.course-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .course-name {
+    flex-basis: 150px; /* Chiều rộng cố định cho tên môn học */
+    margin-right: 20px;
+    font-size: 16px;
+    color: #333;
+    flex-shrink: 0; /* Không co lại */
+  }
+  
+  .progress-container {
+    flex-grow: 1; /* Chiếm hết không gian còn lại */
+    height: 8px;
+    background-color: #eee;
+    border-radius: 4px;
+    overflow: hidden; /* Đảm bảo thanh tiến độ không tràn ra ngoài */
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background-color: #007bff; /* Màu xanh dương */
+    border-radius: 4px;
+    transition: width 0.5s ease-in-out; /* Hiệu ứng khi tiến độ thay đổi */
+  }
+  
+  .progress-text {
+    width: 50px; /* Chiều rộng cố định cho phần trăm */
+    text-align: right;
+    font-size: 14px;
+    color: #555;
+    margin-left: 10px;
+    flex-shrink: 0; /* Không co lại */
+  }

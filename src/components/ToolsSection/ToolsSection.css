@@ -1,0 +1,83 @@
+.tools-section {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tools-section h2 {
+  margin: 0 0 1.5rem;
+  font-size: 1.25rem;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.tool-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tool-button:hover {
+  background: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+.tool-button .material-symbols-outlined {
+  font-size: 24px;
+  color: #724ae8;
+}
+
+.tool-button span:not(.material-symbols-outlined) {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.question-form-overlay {
+  position: fixed;
+  inset: 0; /* rút gọn top, left, right, bottom */
+  background: rgba(0, 0, 0, 0.6); /* làm tối hơn một chút để tập trung hơn */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(4px); /* hiệu ứng mờ nền */
+}
+
+.question-form-container {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem 2.5rem;
+  width: 95%;
+  max-width: 720px;
+  max-height: 85vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  animation: fadeInUp 0.4s ease-out;
+}
+
+/* Thêm hiệu ứng mở form */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

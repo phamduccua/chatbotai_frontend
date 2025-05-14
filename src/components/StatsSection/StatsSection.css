@@ -1,0 +1,15 @@
+.stats-section {
+    /* Sẽ được quản lý bởi grid trong DashboardLayout */
+    /* Tuy nhiên, nếu muốn các card bên trong section này hiển thị dạng hàng ngang trên màn hình nhỏ hơn */
+    display: flex;
+    flex-wrap: wrap; /* Cho phép xuống dòng */
+    gap: 20px; /* Khoảng cách giữa các card */
+    justify-content: space-around; /* Căn giữa các card */
+ }
+ 
+  /* Override hoặc điều chỉnh nếu dùng grid area trong DashboardLayout */
+  .dashboard-layout .stats-area .stats-section {
+      display: grid; /* Sử dụng grid nội bộ nếu cần */
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ví dụ */
+      gap: 20px;
+  }

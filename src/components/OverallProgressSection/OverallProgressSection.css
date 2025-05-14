@@ -1,0 +1,16 @@
+.overall-progress-section {
+    text-align: center;
+ }
+ 
+  .overall-progress-section h2 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 20px;
+ }
+ 
+ .completion-text {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+ }

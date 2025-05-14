@@ -1,0 +1,119 @@
+/* style.css from previous answer, renamed classes if desired, saved as ProblemTable.module.css */
+
+.tableContainer { /* Renamed from .table-container */
+    overflow-x: auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px; /* Added some margin */
+}
+
+.problemTable { /* Renamed from .problem-table */
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+}
+
+.problemTable thead {
+    background-color: #e8f5e9;
+    color: #333;
+    text-align: left;
+    font-weight: bold;
+}
+
+.problemTable th {
+    padding: 12px 15px;
+    border-bottom: 2px solid #dcedc8;
+    position: relative;
+}
+
+.problemTable th:first-child {
+    border-top-left-radius: 8px;
+}
+
+.problemTable th:last-child {
+    border-top-right-radius: 8px;
+}
+
+.problemTable tbody tr {
+    border-bottom: 1px solid #eee;
+}
+
+/* Alternating row colors using class added in JSX */
+.problemTable tbody tr:nth-of-type(odd) {
+     background-color: #ffffff; /* White or very light color */
+}
+
+.problemTable tbody tr.altRow { /* Renamed from .alt-row and using the class added in JSX */
+    background-color: #f1f8e9; /* Lighter green */
+}
+
+
+.problemTable tbody tr:last-of-type {
+    border-bottom: none;
+}
+
+.problemTable td {
+    padding: 10px 15px;
+    vertical-align: middle;
+}
+
+/* Specific column styling */
+.problemTable td:first-child {
+    width: 50px;
+    text-align: center;
+}
+
+.problemTable td:last-child {
+     width: 60px;
+    text-align: center;
+}
+
+/* Styling for links */
+.problemTable a { /* Using the table class prefix */
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.2s ease;
+}
+
+.problemTable a:hover {
+    text-decoration: underline;
+}
+
+.titleLink { /* Renamed from .problem-table a.title-link */
+    color: #333;
+}
+
+.titleLink.redText { /* Renamed from .problem-table a.title-link.red-text */
+    color: #dc3545;
+}
+
+.codeLink { /* Renamed from .problem-table a.code-link */
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Styling for the icon before code */
+.iconCode { /* Renamed from .icon-code */
+    margin-right: 8px;
+    color: #666;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+/* Styling for sort icons */
+.sortIcon { /* Renamed from .sort-icon */
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    color: #666;
+}
+
+.sortIcon .fas {
+    font-size: 0.7em;
+    line-height: 0.6em;
+}

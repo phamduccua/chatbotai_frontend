@@ -1,0 +1,63 @@
+.dashboard-layout {
+    padding: 20px;
+    display: grid;
+    /* Tạo layout grid tương ứng với hình ảnh */
+    /* Điều chỉnh số cột và hàng tùy theo kích thước màn hình */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ví dụ responsive */
+    gap: 20px; /* Khoảng cách giữa các item grid */
+  }
+  
+  /* Các media queries để điều chỉnh layout trên màn hình khác nhau */
+  @media (min-width: 768px) {
+    .dashboard-layout {
+       /* Ví dụ layout 2 cột trên tablet */
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: auto auto auto auto; /* Header, 3 hàng nội dung chính */
+      grid-template-areas:
+        "header header"
+        "main-content sidebar"
+        "test-section sidebar"
+        "calendar sidebar";
+    }
+  
+    .dashboard-layout .dashboard-header-area { grid-area: header; }
+    .dashboard-layout .stats-area { grid-area: main-content; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;} /* Các thẻ stats bên trong */
+    .dashboard-layout .courses-area { grid-area: main-content; } /* Cùng area với stats */
+    .dashboard-layout .test-area { grid-area: test-section; }
+    .dashboard-layout .progress-area { grid-area: sidebar; }
+    .dashboard-layout .notifications-area { grid-area: sidebar; } /* Cùng area với progress */
+    .dashboard-layout .calendar-area { grid-area: calendar; }
+  }
+  
+   @media (min-width: 1024px) {
+    .dashboard-layout {
+      /* Ví dụ layout 3 cột trên desktop */
+      grid-template-columns: 1.5fr 1fr 1fr;
+      grid-template-rows: auto auto auto auto;
+      grid-template-areas:
+         "header header header"
+         "stats progress notifications"
+         "courses progress notifications"
+         "test-section test-section test-section"
+         "calendar . ."; /* Chỉnh lại area calendar nếu cần */
+    }
+     .dashboard-layout .dashboard-header-area { grid-area: header; }
+     .dashboard-layout .stats-area { grid-area: stats; display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px;} /* Các thẻ stats bên trong */
+     .dashboard-layout .courses-area { grid-area: courses; }
+     .dashboard-layout .test-area { grid-area: test-section; }
+     .dashboard-layout .progress-area { grid-area: progress; }
+     .dashboard-layout .notifications-area { grid-area: notifications; }
+     .dashboard-layout .calendar-area { grid-area: calendar; }
+  }
+  
+  
+  /* Các area để sử dụng trong component cha */
+  .dashboard-header-area { grid-area: header; }
+  .stats-area { grid-area: stats; }
+  .courses-area { grid-area: courses; }
+  .test-area { grid-area: test-section; }
+  .progress-area { grid-area: progress; }
+  .notifications-area { grid-area: notifications; }
+  .calendar-area { grid-area: calendar; }
+  
+  /* Cần áp dụng các class area này cho các section component khi sử dụng DashboardLayout */
