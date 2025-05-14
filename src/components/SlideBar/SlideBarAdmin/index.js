@@ -9,8 +9,8 @@ const options = [
         name: "Quản lý bài tập"
     },
     {
-        path: "",
-        name: "Quản lý lớp học",
+        path: "#",
+        name: "Quản lý môn học",
     },
     {
         path: "",
@@ -28,8 +28,12 @@ const options = [
 function SlideBarAmin({className}){
     const [url,setUrl] = useState('')
     useEffect(() => {
+
         setUrl(window.location.pathname);
     },[url])
+    const hanldeOnclick = (data) => {
+        setUrl(data)
+    }
     return(
         <div className={className}>
             <ul className={cx('options')}> 
@@ -37,6 +41,7 @@ function SlideBarAmin({className}){
                     options.map((item,index) => {
                         return (
                             <li 
+                                onClick={() => hanldeOnclick(item.path)}
                                 key={index}
                                 className={item.path === url ? cx('active') : ''}
                             >

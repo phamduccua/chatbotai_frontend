@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
 import className from 'classnames/bind'
 import style from './ProgrammingExercise.module.scss'
 import Header from '../../components/Header'
@@ -7,15 +8,15 @@ import Solution from './Solution'
 import * as request from '../../service/baitaplaptrinh'
 const cx = className.bind(style)
 function ProgrammingExercise(){
+    const {code} = useParams();
     const [program,setProgram] = useState()
     useEffect(() => {
          const fetchData = async () => {
-            const response = await request.getBaiTapLapTrinhById("Chelio")
+            const response = await request.getBaiTapLapTrinhById(code)
             setProgram(response)
-            console.log(response)
          }
          fetchData()
-    },[])
+    },[code])
     return (
         <>
             <Header />

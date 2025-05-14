@@ -19,7 +19,7 @@ function Content({program}){
                     </p>
                 )
             })}
-            <sapn className={cx('label')}>Input:</sapn>
+            <span className={cx('label')}>Input:</span>
             {
                 slice(program.yeuCauDauVao).map((item,index) => {
                     return(

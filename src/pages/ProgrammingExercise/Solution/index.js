@@ -42,7 +42,7 @@ function Solution({program}) {
   const selectedOption = options.find(opt => opt.code === seclect);
   return (
     <div className={cx('container')}>
-      <span className={cx('label')}>Code ({selectedOption?.name})</span>
+      <span className={cx('label')}>Ngôn ngữ lập trình ({selectedOption?.name})</span>
       <select
         className={cx('select')}
         onChange={(e) => hanldeChangeSelect(e.target.value)}

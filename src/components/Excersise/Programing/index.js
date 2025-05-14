@@ -1,5 +1,6 @@
 import { use, useEffect, useState } from 'react'
 import className from 'classnames/bind'
+import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faCircleXmark, faPencil, faPlus, faTrash} from '@fortawesome/free-solid-svg-icons'
 import style from './Programing.module.scss'
@@ -48,7 +49,7 @@ function Programing(){
                 ids.push(Number(hiddenInput.value))
             }
         })
-        handleDelete(ids)
+        if(ids.length > 0) handleDelete(ids)
     }
     return(
         <>
@@ -95,8 +96,22 @@ function Programing(){
                                                 <input type="checkbox" />
                                                 {index+1}
                                             </td>
-                                            <td>{item.code}</td>
-                                            <td>{item.name}</td>
+                                            <td>
+                                                <Link
+                                                    to={"/programing/" + item.code}
+                                                    className={cx('link')}
+                                                >
+                                                    {item.code}
+                                                </Link>
+                                            </td>
+                                            <td>
+                                                <Link 
+                                                    to={"/programing/" + item.code}
+                                                    className={cx('link')} 
+                                                >
+                                                    {item.name}
+                                                </Link>
+                                            </td>
                                             <td>{item.level}</td>
                                             <td>
                                                 <FontAwesomeIcon 

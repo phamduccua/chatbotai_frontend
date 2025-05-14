@@ -1,6 +1,6 @@
 export const routes = {
     dashBoardStudent : 'student',
-    programming: "/programming",
+    programming: '/programing/:code',
     dashBoardTeacher: "/teacher",
     managerPrograming: "/manager/programing"
 }
