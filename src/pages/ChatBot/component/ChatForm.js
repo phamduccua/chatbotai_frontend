@@ -15,7 +15,7 @@ const ChatForm = ({setChatHistory}) => {
         })
       };
 
-      const response = await fetch("http://127.0.0.1:8000/chat", requestOptions);
+      const response = await fetch("http://localhost:8080/sesson", requestOptions);
       const data = await response.json();
       
       if (!response.ok) {
