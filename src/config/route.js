@@ -1,8 +1,8 @@
 export const routes = {
     dashBoardStudent : 'student',
-    programming: '/programing/:code',
+    programming: "/programming",
     dashBoardTeacher: "/teacher",
-    managerPrograming: "/manager/programing"
+    managerPrograming: "/manager/programing",
+    chatbot: "/chatbot"  
 }
 
-    
