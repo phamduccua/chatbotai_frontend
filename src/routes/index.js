@@ -3,6 +3,7 @@ import DashBoardStudent from '../pages/DashBoardStudent/DashboardStudent.jsx'
 import ManagerProgramingQuestions from '../pages/ManageProgramingQuestions/index.js'
 import ProgrammingExercise from '../pages/ProgrammingExercise'
 import DashBoardTeacher from '../pages/DashBoardTeacher/DashBoardTeacher.jsx'
+import ChatBot from '../pages/ChatBot/ChatBot.jsx'
 export const listRoutes = [
     {
         path: routes.dashBoardStudent,
