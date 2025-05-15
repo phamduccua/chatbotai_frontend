@@ -19,5 +19,9 @@ export const listRoutes = [
     {
         path: routes.dashBoardTeacher,
         component: DashBoardTeacher
+    },
+    {
+        path: routes.chatbot,
+        component: ChatBot
     }
 ]
