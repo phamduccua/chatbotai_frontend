@@ -1,7 +1,8 @@
-import ChatForm from "./components/ChatForm";
-import ChatbotIcon from "./components/Chatboticon";
-import ChatMessage from "./components/ChatMessage";
+import ChatForm from "./component/ChatForm";
+import ChatbotIcon from "./component/ChatbotIcon";
+import ChatMessage from "./component/ChatMessage";
 import React, { useState } from 'react';
+import './index.css';
 
 const ChatBot = () => {
   const [chatHistory, setChatHistory] = useState([]);
